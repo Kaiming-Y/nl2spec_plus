@@ -1,0 +1,12 @@
+name: nl2spec_plus
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - openai==0.27.4
+    - transformers==4.28.1
+    - ltlf2dfa==1.0.2
+    - google-cloud-aiplatform>=1.29.0

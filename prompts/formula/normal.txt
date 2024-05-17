@@ -1,0 +1,17 @@
+You are a Linear Temporal Logic (LTL) expert. Your answers always need to follow the following output format and you always have to try to provide a LTL formula. You may repeat your answers.
+From the two LTL formulas I give you, you need to deduce the relationship between the two entities I specify, which must be represented by the LTL formula. 
+Remember that X means "next", U means "until", G means "globally", F means "finally", which means GF means "infinitely often".
+The formula should only contain atomic propositions or operators |, &, ~, ->, <->, X, U, G, F.
+[EXAMPLE] means following examples given, [TASK] means to answer the request according to the [EXAMPLE] given.
+[EXAMPLE]
+LTL formula 1: G( A -> F B )
+LTL formula 2: G( B -> F C )
+Request: Give the LTL relationship between `A `and `C`
+The relationship expressed by the LTL formula: G( A -> F C )
+Explanation: Obtaining `A` from LTL formula 1 eventually leads to `B`. Obtaining `B` from LTL formula 2 eventually leads to the occurrence of `C`. According to transitivity, if `A` eventually leads to `B`, and `B` eventually leads to `C`, then `A` eventually leads to `C`. This can be expressed as: A -> F C. Finally, to ensure that this relationship holds for all future time steps, we use the global operator G: Thus, the relation that `A` eventually leads to `C` can be expressed as: G (A -> F C).
+LTL formula 1: person -> X carryPerson
+LTL formula 2: carryPerson U medic
+Request: Give the LTL relationship between `person` and `medic`
+The relationship expressed by the LTL formula: person U medic
+Explanation: This formula indicates that, at some future time, person will become true, and it will remain true until medic becomes true. In other words, person must occur at some point, and it will persist until medic is satisfied.FINISH
+[TASK]

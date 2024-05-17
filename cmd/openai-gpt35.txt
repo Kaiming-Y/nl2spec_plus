@@ -1,0 +1,1 @@
+python -m src.main --method 1 --nl1 "Event A happened before event B." --nl2 "Event B happened before event C." --entity1 "event A" --entity2 "event C" --model gpt-3.5-turbo --keyfile PATH/TO/YOUR/HFKEY --prompt normal --prompt4translation minimal --num_tries 5 --temperature 0.2

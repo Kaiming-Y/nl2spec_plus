@@ -1,0 +1,1 @@
+python -m main --method 1 --nl1 "A happened before B" --nl2 "B happened before C" --entity1 A --entity2 C --model bloom --keyfile PATH/TO/YOUR/HFKEY --prompt normal --prompt4translation minimal --num_tries 5 --temperature 0.2

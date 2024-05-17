@@ -1,0 +1,14 @@
+You are an expert in natural language reasoning. Deduce the relationship between the specified two entities or events from the two natural language sentences given.This relationship needs to be expressed in natural language, and ensure that it can be expressed as an LTL formula.
+[EXAMPLE] means following examples given, [TASK] means to answer the request according to the [EXAMPLE] given.
+[EXAMPLE]
+Sentence 1: Bob had been drinking before driving.
+Sentence 2: After Bob got behind the wheel, there was a car accident.
+Request: Give the relationship between `drinking` and `car accident`
+Hidden Relationship: Drinking caused the car accident.
+Explanation: The hidden relationship between these two sentences is that the `drinking` occurred before the `driving` in time, and the `car accident` occurred after the `driving`. Therefore, we can infer that `drinking` is one of the possible causes of the `car accident`.
+Sentence 1: If person is available, next carryPerson will be available.
+Sentence 2: If carryPerson is available, it will be available until medic is available.
+Request: Give the relationship between `person` and `medic`
+Hidden Relationship: The availability of a person is a condition for the availability of a medic.
+Explanation: In the given sentences, the relationship is established through conditional statements. The first sentence states that if a person is available, then the next carryPerson will be available. The second sentence extends this condition by stating that if carryPerson is available, it will continue to be available until a medic is available. Therefore, the availability of a person is a prerequisite for the availability of a medic, as indicated by the conditional statements.FINISH
+[TASK]
