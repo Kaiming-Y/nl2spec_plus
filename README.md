@@ -1,4 +1,4 @@
-# *nl2spec++*: Hidden relationship inference and LTL formula representation based on LLM
+# *nl2spec++*: Hidden relationship reasoning and LTL formula representation based on LLM
 
 
 
