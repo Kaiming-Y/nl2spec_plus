@@ -73,14 +73,14 @@ Specify the relationship between entities represented by LTL formula.
 
 In the **semantic extraction** and **translation** steps, we use LLMs.
 
-### Method 2: Translation to LTL + Formula Deduction
+### Method 2: Translation to LTL + Formula Reasoning
 
 ***step1.*** **Translate** two natural language sentences into an LTL formula respectively.
 ***step2.*** The relationship between the two entities is **derived from the two LTL formulas**. This relationship is still represented by the LTL formula.
 
 ![method2](img/method2.png)
 
-In the **translation** and **formula deduction** steps, we use LLMs.
+In the **translation** and **formula reasoning** steps, we use LLMs.
 
 ### Three modules in Method 1 and Method 2
 
@@ -106,7 +106,7 @@ Derive formal specifications (in temporal logics) from unstructured natural lang
 
 ![prompt_1](img/prompt_1.png)
 
-### Method 2 Prompt of *Formula Deduction*
+### Method 2 Prompt of *Formula Reasoning*
 
 ![prompt_2](img/prompt_2.png)
 
