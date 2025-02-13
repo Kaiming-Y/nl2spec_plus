@@ -62,7 +62,7 @@ Specify the relationship between entities represented by LTL formula.
 
 
 
-## METHODS for inferring the relationships between entities
+## METHODS for reasoning the relationships between entities
 
 ### Method 1: Semantic extraction + Translation to LTL
 
