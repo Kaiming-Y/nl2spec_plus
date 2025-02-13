@@ -69,16 +69,16 @@ Specify the relationship between entities represented by LTL formula.
 ***step1.*** Through natural language reasoning, obtain the **natural language expression of the relationship** between the two entities from the given two natural language sentences.
 ***step2.*** **Translate** the natural language expression of the relationship into an LTL formula.
 
-![method1](img/method1.jpg)
+![method1](img/method1.png)
 
 In the **semantic extraction** and **translation** steps, we use LLMs.
 
 ### Method 2: Translation to LTL + Formula Deduction
 
 ***step1.*** **Translate** two natural language sentences into an LTL formula respectively.
-***step2.*** The relationship between the two entities is **inferred from the two LTL formulas**. This relationship is still represented by the LTL formula.
+***step2.*** The relationship between the two entities is **derived from the two LTL formulas**. This relationship is still represented by the LTL formula.
 
-![method2](img/method2.jpg)
+![method2](img/method2.png)
 
 In the **translation** and **formula deduction** steps, we use LLMs.
 
@@ -88,9 +88,9 @@ In the **translation** and **formula deduction** steps, we use LLMs.
 
 Extract a relationship between two entities from two natural language sentences, where the natural language represents the relationship.
 
-#### 2. *Formula Deduction*
+#### 2. *Formula Reasoning*
 
-Infer the relationship between two entities from two LTL formulas that represent the relationship.
+Reasoning the relationship between two entities from two LTL formulas that represent the relationship.
 
 #### 3. *Translation*
 
@@ -166,7 +166,7 @@ About the arguments:
 
 - `en1` & `en2` are entity 1 and 2. **<u>Required.</u>**
 - `model` is the LLM you intend to use.
-- `keyfile` is the path to the api key file.
+- `keyfile` is the path to the API key file.
 - `prompt` is the name of prompt file for reasoning.
 - `prompt4translation` is the name of prompt file for translation
 - `num_tries` is the number of runs the underlying language model attempts a translation.
