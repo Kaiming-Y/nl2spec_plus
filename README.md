@@ -52,7 +52,7 @@ What nl2spec++ exactly does is as follows:
 
 ### Process
 
-According to the selected method, input sentences and entities, call LLM to perform translation, extraction, inference, etc., and finally output.
+According to the selected method, input sentences and entities, call LLM to perform translation, extraction, reasoning, etc., and finally output.
 
 ### Output
 
@@ -66,7 +66,7 @@ Specify the relationship between entities represented by LTL formula.
 
 ### Method 1: Semantic extraction + Translation to LTL
 
-***step1.*** Through natural language inference, obtain the **natural language expression of the relationship** between the two entities from the given two natural language sentences.
+***step1.*** Through natural language reasoning, obtain the **natural language expression of the relationship** between the two entities from the given two natural language sentences.
 ***step2.*** **Translate** the natural language expression of the relationship into an LTL formula.
 
 ![method1](img/method1.jpg)
@@ -167,7 +167,7 @@ About the arguments:
 - `en1` & `en2` are entity 1 and 2. **<u>Required.</u>**
 - `model` is the LLM you intend to use.
 - `keyfile` is the path to the api key file.
-- `prompt` is the name of prompt file for inference.
+- `prompt` is the name of prompt file for reasoning.
 - `prompt4translation` is the name of prompt file for translation
 - `num_tries` is the number of runs the underlying language model attempts a translation.
 - `temperature` is the temperature of LLMs.
