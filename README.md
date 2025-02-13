@@ -121,7 +121,7 @@ The prompt of translation refer to [nl2spec prompts](https://github.com/realChri
 ### Clone the GIT repository
 
 ```shell
-git clone https://github.com/abecedarian007/nl2spec_plus.git
+git clone https://github.com/Kaiming-Y/nl2spec_plus.git
 ```
 
 ### Install dependencies
